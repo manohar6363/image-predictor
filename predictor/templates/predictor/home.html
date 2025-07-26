@@ -1,0 +1,11 @@
+{% extends 'predictor/base.html' %}
+
+{% block title %}Home - Image Predictor{% endblock %}
+
+{% block content %}
+    <div class="text-center">
+        <h1>Welcome to the Image Prediction App</h1>
+        <p class="lead">Upload an image and let AI predict it for you.</p>
+        <a href="{% url 'predict' %}" class="btn btn-primary">Start Prediction</a>
+    </div>
+{% endblock %}

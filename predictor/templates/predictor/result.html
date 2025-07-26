@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{% static 'predictor/css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="brand">Image Predictor</div>
+    </nav>
+    <h1>Prediction Results</h1>
+    <img src="{{ image_url }}" alt="Uploaded Image"><br>
+    <ul>
+        {% for result in results %}
+            <li><strong>{{ result.1 }}</strong>: {{ result.2|floatformat:2 }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'predict' %}"><button>Upload Another</button></a>
+</body>
+</html>
