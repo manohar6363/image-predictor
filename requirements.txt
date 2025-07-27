@@ -61,7 +61,7 @@ six==1.17.0
 stack-data==0.6.3
 tensorboard==2.19.0
 tensorboard-data-server==0.7.2
-tensorflow==2.10.1
+tensorflow==2.9.3
 termcolor==3.1.0
 tornado==6.5.1
 traitlets==5.14.3
@@ -74,4 +74,3 @@ wheel==0.45.1
 wrapt==1.17.2
 Django==4.2.7
 gunicorn==21.2.0
-python-3.10.10
