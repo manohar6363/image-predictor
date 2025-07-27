@@ -4,5 +4,3 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn img_pred.wsgi:application
-    runtime: python
-    pythonVersion: 3.10.12
